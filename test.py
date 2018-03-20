@@ -11,7 +11,15 @@ for sentence in data.split("\n"):
             l.append(word)
             w += len(word) + 1 
         else:
-            print " ".join(l).center(lim," ")
+            str = " ".join(l)
+	    length = len(str)
+	    b = lim-length
+	    print " "*int(b/2) + str + " "*int(b/2)
             l = [word] 
             w = len(word)
-    if (len(l)): print " ".join(l).center(lim," ")
+    if (len(l)): 
+		str1 = " ".join(l)
+	    	lengt = len(str1)
+	    	bl = lim-lengt
+	    	print " "*int(bl/2) + str1 + " "*int(bl/2)
+	
